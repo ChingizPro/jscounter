@@ -4,7 +4,7 @@
     margin: 0;
 }
 .page {
-    min-height: 100vh;
+    min-height: 100dvh;
     background-color: rgb(231, 251, 249);
     color: rgb(0, 72, 60);
     display: flex;
@@ -50,4 +50,26 @@
 }
 .btn:active {
     transform: translate(0.5px, 0.5px);
+}
+@media(max-width:550px){
+    .page {
+        padding: 15px;
+    }
+    .title {
+        font-size: 58px;
+    }
+    .num {
+        font-size: 120px;
+    }
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+    }
+    .reset {
+        margin: 12px 0;
+    }
 }
